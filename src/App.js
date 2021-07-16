@@ -3,7 +3,7 @@ import "./App.css";
 import Counter from "./components/01-use-state/Counter";
 import Timer from "./components/02-use-state-loop/Timer";
 
-import TimerTwo from "./components/03-use-effect-mounting/TimerTwo";
+import TimerTwo from "./components/03-use-effect-mounting/TimerTwo";   // <== IMPORT
 
 function App() {
   const [show, setShow] = useState(true);
@@ -16,7 +16,7 @@ function App() {
       {/* {show && <Counter />} */}
       {/* {show && <Timer />} */}
 
-      {show && <TimerTwo />}
+      {show && <TimerTwo />}                 {/*  <== ADD  */}
     </div>
   );
 }
