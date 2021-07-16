@@ -1,8 +1,18 @@
-import logo from "./logo.svg";
+import { useState } from "react";
 import "./App.css";
+import Counter from "./components/01-use-state/Counter";
 
 function App() {
-  return <div className="App"></div>;
+  const [show, setShow] = useState(true);
+
+  return (
+    <div className="App">
+      <button onClick={() => setShow(!show)}>
+        { show ? "Hide" : "Show"}
+      </button>
+      {show && <Counter />}
+    </div>
+  );
 }
 
 export default App;
