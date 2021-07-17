@@ -5,7 +5,7 @@ function TimerTwo() {
 
   // Add the effect in the function body
   useEffect(() => {
-    console.log("useEffect - initial render");
+    console.log("useEffect - Mounting (initial render)");
     
     const id = setInterval(() => {
       setCount((prevCount) => prevCount + 1);
