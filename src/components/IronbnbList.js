@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import Spinner from "./Spinner";
 import axios from "axios";
 
 const apiURL = "https://ironbnb-m3.herokuapp.com/apartments";
@@ -19,7 +18,7 @@ function IronbnbList() {
   return (
     <div>
       <h3>List of apartments</h3>
-      {fetching && <Spinner />}
+      {fetching && <p>Loading ...</p>}
 
       {apartments.map((apt) => (
         <div key={apt._id} className="card">
