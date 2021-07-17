@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./App.css";
-import Counter from "./components/01-use-state/Counter";
+// import Counter from "./components/01-use-state/Counter";
 
 import Timer from "./components/02-use-state-loop/Timer";    // <== IMPORT
 
