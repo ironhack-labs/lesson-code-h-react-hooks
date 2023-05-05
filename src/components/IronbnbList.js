@@ -14,11 +14,20 @@ function IronbnbList() {
       setFetching(false);
     });
   }, []);
+  
+  // If the data is not ready only render the "Loading" message  
+  if (fetching) {
+    return (
+      <div>
+        <h3>List of apartments</h3>
+        <p>Loading</p>
+      </div>
+    );
+  }  
 
   return (
     <div>
       <h3>List of apartments</h3>
-      {fetching && <p>Loading ...</p>}
 
       {apartments.map((apt) => (
         <div key={apt._id} className="card">
