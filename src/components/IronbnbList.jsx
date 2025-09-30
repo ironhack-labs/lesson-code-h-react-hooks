@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 
-const apiURL = "https://ironbnb-m3.herokuapp.com/apartments";
+const apiURL = "https://apartments-api.edu.ironhack.com/apartments";
 
 function IronbnbList() {
   const [fetching, setFetching] = useState(true);
